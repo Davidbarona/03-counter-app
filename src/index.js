@@ -1,6 +1,7 @@
 import React from 'react'
 import  ReactDOM  from 'react-dom';
-import  FirstApp from  './FirstApp'
+import CounterApp from './CounterApp';
+// import  FirstApp from  './FirstApp'
 import './index.css'
 
 
@@ -8,6 +9,6 @@ import './index.css'
 const divRoot = document.querySelector('#root')
 
 
-ReactDOM.render(<FirstApp greeting='hello world'/>,divRoot)
+ReactDOM.render(<CounterApp/>,divRoot)
 
 console.log(divRoot);
