@@ -1,59 +1,59 @@
 // function 
 
-// type 1
-function saludar(nombre){
-    return `hola,  ${nombre}`;
-}
+// // type 1
+// function regards(nombre){
+//     return `hello,  ${nombre}`;
+// }
 
-console.log(saludar('Goku'));
+// console.log(regards('Goku'));
 
-// type 2 function with const 
+// // type 2 function with const 
 
-const saludar1 =  function(nombre){
-    return `hola,  ${nombre}`;
-}
+// const regards1 =  function(nombre){
+//     return `hello,  ${nombre}`;
+// }
 
-console.log(saludar1('Vegeta'));
+// console.log(regards1('Vegeta'));
 
 // type 3 arrow function 
 
-const saludar3 = (nombre) =>{
-    return `hola,  ${nombre}`;
-}
+// const regards3 = (nombre) =>{
+//     return `hello,  ${nombre}`;
+// }
 
-console.log(saludar3('Picoro'));
+// // console.log(saludar3('Picoro'));
 
-// type 4 simplify 
+// // type 4 simplify 
 
-const saludar4 = (nombre) =>  `hola,  ${nombre}`;
+// const regards4 = (nombre) =>  `hello,  ${nombre}`;
 
-console.log(saludar4('Krilin'));
+// console.log(regards4('Krilin'));
 
 // back an object but don't use a return 
 
-const getUser = () =>({
+export const getUser = () =>({
     uid:'12345',
     nameUser:'dave'
 })
 
-console.log(getUser());
+// console.log(getUser());
 
 
-function getActiveUser (name){
+export function getActiveUser (name){
     return {
         uid:'1234567',
         username:name
     }
 }
 
-const activeUser = getActiveUser('David')
-console.log(activeUser);
+// const activeUser = getActiveUser('David')
+// console.log(activeUser);
 
 
-const  activeUser1 = (name)=>(
-    {uid:'1234567',
-    name:name
-    }
-) 
+// const  activeUser1 = (name)=>(
+//     {uid:'1234567',
+//     name:name
+//     }
+// ) 
 
-console.log(activeUser1('diego'));
+// console.log(activeUser1('diego'));
