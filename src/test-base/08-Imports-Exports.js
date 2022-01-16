@@ -1,4 +1,4 @@
-import heroes, {owners}  from '../data/heroes'
+    import heroes   from '../data/hero'
 
 // console.log(owners);
 
@@ -21,7 +21,9 @@ import heroes, {owners}  from '../data/heroes'
 
 // console.log(getHeoreById(4));
 
- export const getHeroesByOwner = (owner) => heroes.filter((heroe)=> heroe.owner === owner)
+ export const getHeroesByOwner = (owner) => {
+     return heroes.filter((heroe)=> heroe.owner === owner)
+    }
 
 // console.log(getHeroesByOwner('DC'));
 
