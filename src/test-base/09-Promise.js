@@ -1,4 +1,4 @@
-import { getHeoreById, getHeroesByOwner } from "./bases/08-Imports-Exports";
+import { getHeoreById } from "./08-Imports-Exports";
 
 //  const promise = new Promise ((resolved,reject)=>{
 //      setTimeout(() => {
@@ -14,7 +14,7 @@ import { getHeoreById, getHeroesByOwner } from "./bases/08-Imports-Exports";
 //       console.log('Then about promise',hero);
 //  }).catch (err => console.warn(err))
 
-const getHeroByIdAsync = (id) => {
+export const getHeroByIdAsync = (id) => {
   return new Promise((resolved, reject) => {
     setTimeout(() => {
       const hero = getHeoreById(id);
@@ -24,10 +24,10 @@ const getHeroByIdAsync = (id) => {
       } else {
         reject("hero not found");
       }
-    }, 2000);
+    }, 1500);
   });
 };
 
-getHeroByIdAsync(4)
-  .then(console.log)
-  .catch(console.warn);
+// getHeroByIdAsync(4)
+//   .then(console.log)
+//   .catch(console.warn);
