@@ -21,6 +21,22 @@ describe('testing on First App',()=>{
         const wrapper = shallow(<FirstApp greeting={greeting}/>)
         expect(wrapper).toMatchSnapshot();
     });
+
+    test('should render the subtitle send by props', () => {
+        const greeting = "Hi,I'm Goku"
+        const subtitle = "Hi,I'm a subtitle"
+        const wrapper = shallow(
+        <FirstApp
+             greeting={greeting}
+             subtitle={subtitle}
+             />)
+
+        const paragraphText = wrapper.find('p').text()
+        
+        expect(paragraphText).toBe(subtitle)
+        
+    });
+    
     
     
 })
