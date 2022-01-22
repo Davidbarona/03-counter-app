@@ -8,6 +8,6 @@ import './index.css'
 
 const divRoot = document.querySelector('#root')
 
-ReactDOM.render(<FirstApp greeting="Hi,I'm Goku"/>,divRoot)
-// ReactDOM.render(<CounterApp/>,divRoot)
+// ReactDOM.render(<FirstApp greeting="Hi,I'm Goku"/>,divRoot)
+ ReactDOM.render(<CounterApp value={10}/>,divRoot)
 
